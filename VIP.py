@@ -2,10 +2,24 @@ import asyncio
 import random
 import string
 import logging
-from telegram import Update
-from telegram.ext import Application, CommandHandler, CallbackContext, filters, MessageHandler
 from pymongo import MongoClient
 from datetime import datetime, timedelta, timezone
+import os
+import telebot
+import json
+import requests
+import logging
+import time
+from pymongo import MongoClient
+from datetime import datetime, timedelta
+import certifi
+import random
+from subprocess import Popen
+from threading import Thread
+import asyncio
+import aiohttp
+from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
